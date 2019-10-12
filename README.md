@@ -7,6 +7,10 @@ https://www.markdownguide.org/basic-syntax/
 https://git-scm.com/book/fr/v2
 https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
 
+## Commandes générales usuelles
+Statut en cours
+> `git status`
+
 ### Démarche standarde
 (OPTIONNEL) Dans le dossier courant pour initialiser un dossier .git ou le + dans l'onglet de Contrôle de version
 > `git init`
@@ -25,7 +29,6 @@ Envoyer sur la branche master
 > `git push -u origin master`
 
 ### Remote
-
 Changer de remote  
 https://help.github.com/en/articles/changing-a-remotes-url
 
@@ -50,9 +53,25 @@ Se positionner sur la branche souhaitée
 Créer et se positionner sur la nouvelle branche
 > `git checkout -b ma-branche`
 
+#### Clonage de branche
 On se positionne sur la branche mère
 > `git checkout mere`
 
 Puis on se positionne sur la branche fille
 > `git merge fille`
+
+#### Remisage
+https://git-scm.com/book/fr/v1/Utilitaires-Git-Le-remisage
+
+Remise le code en cours (si on veut changer de branche sans commit)
+> `git stash`
+
+Liste les stash
+> `git stash list`
+
+Applique le dernier stash
+> `git stash apply`  
+
+Applique le stash n°
+> `git stash apply@x`
 
