@@ -38,6 +38,9 @@ Effacer repo distant lié
 > `git remote rm repoToDelete`
 
 ### Branches
+Voir les branches
+> `git branch`
+
 Créer une nouvelle branche
 > `git branch nouvelle-branche`
 
