@@ -1,14 +1,13 @@
 # Github
 
-### Basique  
-https://git-scm.com/book/fr/v2
-https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
-
 ## Synthaxe Markdown
 https://www.markdownguide.org/basic-syntax/
 
-## Démarche standarde
+## Basique  
+https://git-scm.com/book/fr/v2
+https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
 
+### Démarche standarde
 (OPTIONNEL) Dans le dossier courant pour initialiser un dossier .git ou le + dans l'onglet de Contrôle de version
 > `git init`
 
@@ -25,9 +24,7 @@ Conseillé de commiter / valider avec message a chaque modification même si l'o
 Envoyer sur la branche master
 > `git push -u origin master`
 
-### Divers
-
-ctrl + shit + p Git
+### Remote
 
 Changer de remote  
 https://help.github.com/en/articles/changing-a-remotes-url
@@ -39,7 +36,8 @@ Verifier repo distant lié
 
 Effacer repo distant lié
 > `git remote rm repoToDelete`
-#### Branch
+
+### Branches
 Créer une nouvelle branche
 > `git branch nouvelle-branche`
 
@@ -49,8 +47,9 @@ Se positionner sur la branche souhaitée
 Créer et se positionner sur la nouvelle branche
 > `git checkout -b ma-branche`
 
-> `On se positionne sur la branche mère`
-git checkout mere
+On se positionne sur la branche mère
+> `git checkout mere`
 
-> `Puis on se positionne sur la branche fille`
-git merge fille
+Puis on se positionne sur la branche fille
+> `git merge fille`
+
