@@ -39,11 +39,18 @@ Verifier repo distant lié
 
 Effacer repo distant lié
 > `git remote rm repoToDelete`
+#### Branch
+Créer une nouvelle branche
+> `git branch nouvelle-branche`
 
-git branch nouvelle-branche
-git checkout nouvelle-branche
+Se positionner sur la branche souhaitée
+> `git checkout nouvelle-branche`
 
-git checkout -b ma-branche
+Créer et se positionner sur la nouvelle branche
+> `git checkout -b ma-branche`
 
+> `On se positionne sur la branche mère`
 git checkout mere
+
+> `Puis on se positionne sur la branche fille`
 git merge fille
