@@ -29,6 +29,8 @@ La où se situent les fichiers untracked
 
 Statut en cours (Working tree et stating area)
 > `git status`
+> `git status --long`
+
 
 ### Zone de transit / Staging area
 Ajoute le fichier à track
@@ -37,17 +39,30 @@ Ajoute le fichier à track
 Ajoute tous les fichiers à track du working tree
 > `git add .`
 
+Montre la différence entre tous les fichiers modifiés dans la zone d'attente et working tree
+> `git diff`
+
+Voir modifications sur un fichier
+> `git diff nomFichier`
+
+Voir modifications dans la staging area
+> `git diff --staged`
+
 ### Commits
 C'est ce qui va être envoyé sur Github. Apres un commit la staging area se vide.
+
+Commiter le/les éléments de la staging area / zone de transit
+> `git commit -m "message du commit"`
 
 Voir informations du repository local
 > `git ls-tree --full-tree -r HEAD`
 
+Voir le commit traqué
+> `git log nomCommit puis la touche q pour quitter`
+
 Voir tous les fichiers traqués par le repo
 > `git log puis la touche q pour quitter`
 
-Commiter le/les éléments de la staging area / zone de transit
-> `git commit -m "message du commit"`
 
 ### Remote
 Changer de remote  
