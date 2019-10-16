@@ -7,10 +7,6 @@ https://www.markdownguide.org/basic-syntax/
 https://git-scm.com/book/fr/v2
 https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
 
-## Commandes générales usuelles
-Statut en cours
-> `git status`
-
 ### Démarche standarde
 (OPTIONNEL) Dans le dossier courant pour initialiser un dossier .git ou le + dans l'onglet de Contrôle de version
 > `git init`
@@ -27,6 +23,31 @@ Conseillé de commiter / valider avec message a chaque modification même si l'o
 
 Envoyer sur la branche master
 > `git push -u origin master`
+
+### Working tree / Espace de travail
+La où se situent les fichiers untracked
+
+Statut en cours (Working tree et stating area)
+> `git status`
+
+### Zone de transit / Staging area
+Ajoute le fichier à track
+> `git add nomFichier`
+
+Ajoute tous les fichiers à track du working tree
+> `git add .`
+
+### Commits
+C'est ce qui va être envoyé sur Github. Apres un commit la staging area se vide.
+
+Voir informations du repository local
+> `git ls-tree --full-tree -r HEAD`
+
+Voir tous les fichiers traqués par le repo
+> `git log puis la touche q pour quitter`
+
+Commiter le/les éléments de la staging area / zone de transit
+> `git commit -m "message du commit"`
 
 ### Remote
 Changer de remote  
@@ -55,10 +76,10 @@ Créer et se positionner sur la nouvelle branche
 
 #### Clonage de branche
 On se positionne sur la branche mère
-> `git checkout mere`
+> `git checkout brancheMere`
 
 Puis on se positionne sur la branche fille
-> `git merge fille`
+> `git merge bracnheFille`
 
 #### Remisage
 https://git-scm.com/book/fr/v1/Utilitaires-Git-Le-remisage
