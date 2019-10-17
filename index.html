@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Javascript</title>
-</head>
-<body>
-    <h1>IA</h1>
-    Salut le kévinsss
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BrainJS Experiments</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Pattern Analysis</h1>
+        <h2>Le but :</h2>
+        <h4>Appuyez sur les boutons dans un certain ordre pour que l'intelligence artificielle arrive à deviner votre "habitude de clic" et aisi prédire le prochain clic avant que vous n'appuyez dessus.</h4>
+        <button id="gauche" class="gauche">Gauche</button><button id="droite" class="droite">Droite</button>
+        <br><br>
+        <label for="texte">Prédiction du prochain bouton : </label><p id="texte">En apprentissage</p>
+        <script src="//unpkg.com/brain.js"></script> 
+        <script>
+            var bouton_gauche = document.getElementById('gauche');
+            var bouton_droite = document.getElementById('droite');
+            var texte = document.getElementById('texte');
+        </script>
+    </body>
 </html>

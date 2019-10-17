@@ -1,0 +1,33 @@
+p{
+    display: inline
+}
+button{
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.gauche:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.gauche{
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50
+}
+.droite:hover {
+    background-color: #008CBA; /* Green */
+    color: white;
+}
+.droite{
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA
+}
